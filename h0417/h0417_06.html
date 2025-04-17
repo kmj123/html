@@ -7,74 +7,75 @@
     <style>
         *{margin:0; padding: 0;}
         h4{text-align: center;}
-        .shape{margin:50px auto;
-            width:100px; height:100px; 
-            background:blue;
+        .shape{ margin:50px auto;
+            width:100px; height:100px;
+            background: blue;
             animation-name: change;
-            animation-duration:3s;
-            animation-direction:alternate;
+            animation-duration: 1s;
+            animation-direction: alternate;
             animation-iteration-count: infinite;
+        
         }
 
         @keyframes change{
             from{
-                background:blue;
+                background: blue;
                 border:3px solid black;
             }
             to{
-                background:aqua;
-                border:3px dotted red;
+                background: aqua;
+                border: 3px dotted red;
                 border-radius: 50%;
             }
         }
+        .shape2{ margin:50px auto;
+            width:100px; height:100px;
+            background: blue;
 
-        .shape2{margin:50px auto;
-            width:100px; height:100px; 
-            background:blue;
-            animation: change2 1s alternate infinite;
+            animation:change2 1s alternate infinite;
             /*
             animation-name: change2;
-            animation-duration:3s;
-            animation-direction:alternate;
+            animation-duration: 1s;
+            animation-direction: alternate;
             animation-iteration-count: infinite;
             */
+        
         }
 
         @keyframes change2{
             from{
-                background:blue;
+                background: blue;
                 border:3px solid black;
-                transform:rotate(0deg);
+                transform: rotate(0deg);
             }
             to{
-                background:aqua;
-                border:3px dotted red;
-                transform:rotate(360deg);
+                background: aqua;
+                border: 3px dotted red;
+                
                 transform: translate(100px,0);
             }
         }
         @keyframes change3{
             from{
-                transform:rotate(0deg);
+                transform: rotate(0deg);
             }
             to{
                 transform:rotate(360deg);
             }
         }
+        
+
     </style>
 </head>
 <body>
     <div>
         <h4>애니메이션</h4>
-        <div class="shape">
+        <div class="shape"></div>
     </div>
     <div>
         <h4>애니메이션2</h4>
-        <div class="shape2">
+        <div class="shape2"></div>
     </div>
-    <div>
-        <h4>애니메이션3</h4>
-        <div class="shape3">
-    </div>
+    
 </body>
 </html>
