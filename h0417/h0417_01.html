@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* not: 초기값 (old): 아무의미없지만 괄호안에 무엇이든 넣어놔야함 */
+        /* radio + label=> radio 뒤에 나오는 바로 뒤쪽에 label을 찾아서 스타일을 적용시킨다는 뜻 
+            + 표기 뒤에 나오는 태그에 스타이 적용
+        */
+        input[type='radio']:not(old) + label{border:1px solid green;}
+        input[type='radio']:not(old):checked + label{background:green; color:white; 
+            font-weight:700;
+        }
+        
+        h2 + p{width:500px; height:40px; border:1px solid black; 
+            text-align: center;}
+        /* hover: 마우스가 올라가면 적용 checked: 클릭하면 적용 */
+        h2:hover + p{background:black; color:white; font-weight:700; cursor:pointer;}
+        
+    </style>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <p>회원가입을 하시면 많은 헤택이 주어집니다. 회원가입을 해주세요.</p>
+    <form>
+        <label>성별</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">여성</label>
+    </form>
+</body>
+</html>
