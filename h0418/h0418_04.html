@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding:0; margin:0;}
+        section{display:flex; flex-direction: row;}
+        .top{width:100%; height:100px; 
+            background:blue;
+        }
+        .banner{width:100%; height:400px; 
+            background:url('images/img_re_main_slide_20231204-2_pc.png')no-repeat 0 -300px;
+        }
+        .selct-left{width:50%; height:400px; 
+            background:grey;
+        }
+        .selct-right{width:50%; height:400px;
+             background:green;
+            }
+        #footer{width:100%; height:100px; 
+            background:yellow;
+        }
+        @media screen and (max-width: 800px){
+            .banner{
+                background: url('images/img_re_main_slide_20231204-2_mo.png') no-repeat 0 -550px;
+            }
+            section{flex-direction: column;}
+            .selct-left{width:100%; height: 200px;}
+            .selct-right{width:100%; height: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="top">상단부분</div>
+        <div class="banner">
+            <img src="">배너
+        </div>
+        <section>
+            <div class="selct-left">뉴스</div>
+            <div class="selct-right">이미지</div>
+        </section>
+        </div>
+    </div>
+    <div id="footer">푸터</div>
+</body>
+</html>

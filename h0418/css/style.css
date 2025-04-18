@@ -52,10 +52,71 @@ section{width:1000px; margin:0 auto; }
     background-image:url(''); 
     padding:0 0 0 10px;
 }
-section h3{ clear:both; letter-spacing: -0.8px;
+/* #content 배너가 있는 부분*/
+#content section h3{ clear:both; 
+    letter-spacing: -0.8px;
     font-size:40px; font-weight:700; color:#333;
-    text-align:center; margin-bottom: 30px; padding-top:25px;
+    text-align:center; margin-bottom: 30px; 
+    padding-top:25px;
 }
+
+/********* 배너가 없는 부분 **********/
+#content .sect1{width: 450px; margin:0 auto; }
+#content .sect1 h3{ font-size:40px; font-weight:700; color:#333;
+    text-align:center; margin-bottom: 30px; padding-top:82px;
+}
+.category ul{display:flex;}
+.category li{margin-right:15px;}
+.category li a{display: inline-block; height:32px; 
+    font-size: 13px; padding:0 5px 15px 0px; 
+}
+.category li:nth-child(1) a{border-bottom:5px solid black;}
+.category li a:hover{border-bottom:5px solid black;}
+.sect1 input{border:2px solid #ccc; width: 100%; height:38px; 
+    font-size:16px; padding-left:7px; margin-bottom: 7px;}
+.sect1 form{margin-top:20px;}
+
+#content .sect1 .saveFind{display: flex; width:100%; justify-content: space-between;}
+#content .sect1 .find{text-align:left; width:190px;}
+
+/* savd id 부분 */
+.save-id label{font-size: 16px;}
+.save-id input[type='checkbox']:not(old){ width:24px; height:20px; opacity: 0; 
+    cursor:pointer;
+}
+.save-id input[type='checkbox']:not(old) + label{ 
+    width:24px; height:26px;
+    margin:0 10px 0 -24px;  padding-left:24px;
+    background: url('../images/icon_chk_off.svg') no-repeat 0 2px;
+}
+.save-id input[type='checkbox']:not(old):checked + label{
+    background: url('../images/bt-login-checkbox-on-pc.svg') no-repeat 0 -1px;
+}
+.sect1 form button{width:100%; height:55px; background:#bdd61a; border:none;
+    margin-top:16px; font-size:18px; font-weight:600;
+}
+
+.sect1 .sns{width:400px; margin-top:38px auto; }
+.sns ul{display:flex; justify-content: space-evenly; 
+    font-size: 12px; color:#767676; text-align:center;
+}
+.sns li{width:50px; height:74px; }
+.sns li img{margin:10px 0 10px 0;}
+
+.sign-info{margin-top:50px; padding:20px 15px 25px 15px;
+    background:#f7f7f7;
+    width:100%;
+}
+#content .sect1 .sign-info h3{padding-top:0; margin:0 0 0 0; font-weight:700;
+    font-size:16px; text-align: left;}
+#content .sect1 .sign-info p{font-size:15px;}
+#content .sect1 .sign-up{
+    width:260px; height:50px; margin-top:15px; padding-left:10px; 
+    font-size:17px; font-weight:600; background: white; border:2px solid #ccc;
+    line-height:44px;
+}
+
+/*------------------------------*/
 
 .join-step ul{display: flex; text-align:center;
 }
@@ -173,6 +234,7 @@ footer{ clear:both;
 .foot-service a { display: block; width:88px; height: 32px;
     color:white; font-size: 13px; font-weight: 500; text-align: center;
     border:1px solid white; line-height: 30px; margin:38px 0 0 80px; }
+
 /* 이용약관 주소 부분 */    
 .foot-addr{padding-top: 32px;}
 .foot-addr ul{ display: flex; }
@@ -186,11 +248,16 @@ letter-spacing: -1.5px;  display: inline-block; height:26px; }
 .foot-addr span{ display: inline-block; margin-top:6px; padding-right:6px; }
 .foot-addr div a{font-size: 12px; font-weight: 400; padding-left:3px;}
 
-
-
-
-
-
+/* 게시판 리스트 부분 */
+.search{width:331px; margin: 0 auto;}
+.sect1 .search form{padding:0; margin:0; height: 40px;}
+.sect1 .search form{padding:0; margin:0;}
+.sect1 .search select{width:80px; height:40px; padding: 5px; 
+    font-size:16px; border: 1px solid #666;}
+.sect1 .search input{width:200px; height:40px; padding:5px;
+    font-size:16px; border:1px solid #666;}
+.sect1 .search button{width:40px; height:40px; background:#666;
+    color:white; margin:0;}
 
 
 

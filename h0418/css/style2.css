@@ -52,10 +52,74 @@ section{width:1000px; margin:0 auto; }
     background-image:url(''); 
     padding:0 0 0 10px;
 }
-section h3{ clear:both; letter-spacing: -0.8px;
+/* #content 배너가 있는 부분*/
+#content section h3{clear:both; 
+    letter-spacing: -0.8px;
     font-size:40px; font-weight:700; color:#333;
-    text-align:center; margin-bottom: 30px; padding-top:25px;
+    text-align:center; margin-bottom: 30px; 
+    padding-top:25px;
 }
+
+/********* 배너가 없는 부분 **********/
+#content .sect1{margin:0 auto; width:450px;}
+#content .sect1 h3{font-size: 32px; margin: 50px 0 50px 0;
+    text-align:center;
+}
+.category ul{display: flex;}
+.category li{margin-right: 15px;}
+.category li a{display: inline-block; height:32px;
+    width:100%; padding: 0 15px 0 15px;
+    text-align:center; font-size: 13px; 
+    font-weight: 600; 
+
+}
+.category li a:hover{border-bottom:5px solid black; }
+
+.sect1 form{margin-top:30px;}
+.sect1 input{width:100%; height: 38px; margin-bottom: 5px;
+    border:2px solid #ccc; padding-left: 7px; font-size: 16px;
+}
+#content .sect1 .saveFind{display:flex; width: 100%;justify-content: space-between;}
+#content .sect1 .find{text-align:left; width:190px;}
+
+/* 아이디 저장 */
+.savd-id label{font-size:16px;}
+.savd-id input[type='checkbox']:not(old){ width:24px; height:20px; opacity: 0; cursor:pointer; }
+.savd-id input[type='checkbox']:not(old) + label{
+    width:24px; height:24px;
+    margin:0 10px 0 -24px;  padding-left:24px;
+    background: url('../images/icon_chk_off.svg') no-repeat 0 2px;
+}
+.savd-id input[type='checkbox']:not(old):checked + label{
+    background: url('../images/bt-login-checkbox-on-pc.svg') no-repeat 0 -1px;
+}
+.savd-id div{ width:770px; height:81px;  }
+.savd-id ul{display:flex; flex-wrap:wrap; 
+    justify-content: left;
+    align-content: space-between; 
+}
+.savd-id li{width:120px; margin:5px 0;}
+
+.sect1 form button{width:455px; height:55px; background:#bdd61a;
+    font-size:18px; font-weight:700; margin-top:16px; border:none;
+}
+
+.sect1 .sns{width:400px; margin-top: 48px auto;}
+.sns ul{list-style: none; display: flex; font-size:12px;
+    justify-content: space-evenly; text-align: center;
+}
+.sns li{width:50px; height:74px;}
+.sns li img{margin:10px 0 10px 0;}
+
+.sign-info{text-align: left; background:#f7f7f7; padding: 20px 15px 25px; margin-top:40px;}
+#content .sign-info h3{font-size:16px; margin: 0 0 0 0; padding-top:0; text-align:left;}
+.sign-up{border:2px solid #ccc; background:white; 
+    font-size:17px; width: 260px; height: 50px; text-align:left; font-weight: 700;
+    padding-left:10px; margin-top: 20px; line-height:45px;
+}
+
+
+/*------------------------------*/
 
 .join-step ul{display: flex; text-align:center;
 }
@@ -173,6 +237,7 @@ footer{ clear:both;
 .foot-service a { display: block; width:88px; height: 32px;
     color:white; font-size: 13px; font-weight: 500; text-align: center;
     border:1px solid white; line-height: 30px; margin:38px 0 0 80px; }
+
 /* 이용약관 주소 부분 */    
 .foot-addr{padding-top: 32px;}
 .foot-addr ul{ display: flex; }
@@ -185,10 +250,6 @@ letter-spacing: -1.5px;  display: inline-block; height:26px; }
 .foot-addr div{ font-size: 12px; letter-spacing: -1px; padding-top:18px; }
 .foot-addr span{ display: inline-block; margin-top:6px; padding-right:6px; }
 .foot-addr div a{font-size: 12px; font-weight: 400; padding-left:3px;}
-
-
-
-
 
 
 
