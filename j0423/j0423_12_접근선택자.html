@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <title>Document</title>
+</head>
+<script>
+    //제이쿼리 선언
+    $(function(){
+        $("h2").click(function(){
+            console.log("부모요소: ",$("h2").parent());     //부모요소
+            console.log("이전요소: ",$("h2").prev());       // 이전요소
+            console.log("다음요소: ",$("h2").next());       // 다음요소
+            console.log("closest 요소: ",$("h2").closest("span")); // 가장가까운요소
+            console.log("siblings 요소: ",$("h2").siblings("span")); // 가장가까운요소
+            //h2를 클릭할때 이전요소를 빨간색 글자로 변경하시오.
+            $("h2").prev().css("color","red");
+            // 다음요소 변경
+            $("h2").next().css("color","blue");
+
+            $("p").click(function(){
+                //console.log("데이터 값: ", $(this).text()); // this - 자기자신
+                //$(this).css("color","red");
+                console.log($("p").siblings());     // 모든 형제요소 검색
+            });
+
+            $("inner_wrap").click(function(){
+                console.log($("inner_wrap").children());
+            });
+        });
+    });//jquery
+</script>
+<body>
+
+    <span>bbb
+        <div id="wrap">
+
+            <div id="inner_wrap">
+                <h1>제목1</h1>
+                <h2>제목2</h2>
+                <P>내용1</P>
+                <P>내용2</P>
+                <P>내용3</P>
+                <span>aaa</span>
+            </div>
+        </div>
+    </span>
+   
+</body>
+</html>

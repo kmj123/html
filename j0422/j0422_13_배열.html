@@ -26,6 +26,18 @@
     <script>
         // 1-10까지 랜덤숫자 6개를 출력, 중복된 숫자가 없도록 6개를 출력
         // arr1[] = 6개출력
+        let arr1 = [];
+        while(i<=6){
+            let ranNum = parseInt(10*Math.random())+1;
+            arr1.push(ranNum);
+            console.log(ranNum);
+            if(ranNum == arr1[ranNum]) {
+                document.write("중복된값");
+            }else{
+                document.write(ranNum);
+            }
+            i++;
+        }
   
     </script>
 </body>
