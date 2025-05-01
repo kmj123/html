@@ -101,3 +101,4 @@ total number(3),
 avg number(4),
 rank number(3)
 );
+

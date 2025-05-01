@@ -412,7 +412,8 @@ where a.sno = b.sno
 select ranks from(select sno,rank() over(order by total desc) ranks from stuscore3) b;
 select sno,rank() over(order by total desc) ranks from stuscore3;
 
-
+SELECT empNo, empName, salary,RANK() OVER (ORDER BY salary DESC) RANK등수FROM employee;
+select sno,name,total,rank() over(order by total desc) 등수 from stuscore3; 
 
 -- sno 1,2,3,4
 select * from stuscore3;
