@@ -390,40 +390,6 @@ commit;
 select * from test;
 select length(ch1),length(ch2) from test;
 
--- 날짜함수
--- 달의 첫일, 마지막 일을 출력하시오
--- 첫 일, mdate, 마지막일 출력
-select mdate from member order by mdate desc;
-select trunc(mdate,'month'),mdate,last_day(mdate) from member;
-select mdate,to_char(mdate,'mm') from member where to_char(mdate,'mm')='07';
-
-
--- 홍길동 가입일: 2024년 07월 14일 화요일
-select name, to_char(mdate,'yyyy"년" mm"월" mm"일" day') from member;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
